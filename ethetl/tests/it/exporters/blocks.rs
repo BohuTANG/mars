@@ -39,18 +39,18 @@ async fn test_blocks_exporters() -> Result<()> {
 
         goldenfile::differs::text_diff(
             Path::new("tests/it/testdata/blocks/blocks_15340159_15340160.csv"),
-            Path::new("_datas/_test_output_dir/blocks/blocks_15340159_15340160.csv"),
+            Path::new("_test_output_dir/blocks/blocks_15340159_15340160.csv"),
         );
 
         goldenfile::differs::text_diff(
             Path::new("tests/it/testdata/transactions/transactions_15340159_15340160.csv"),
-            Path::new("_datas/_test_output_dir/transactions/transactions_15340159_15340160.csv"),
+            Path::new("_test_output_dir/transactions/transactions_15340159_15340160.csv"),
         );
 
         goldenfile::differs::text_diff(
             Path::new("tests/it/testdata/transactions/_transactions_hash_15340159_15340160.txt"),
             Path::new(
-                "_datas/_test_output_dir/transactions/_transactions_hash_15340159_15340160.txt",
+                "_test_output_dir/transactions/_transactions_hash_15340159_15340160.txt",
             ),
         );
     }

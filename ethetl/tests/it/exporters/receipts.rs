@@ -52,24 +52,24 @@ async fn test_receipts_exporters() -> Result<()> {
 
         goldenfile::differs::text_diff(
             Path::new("tests/it/testdata/receipts/receipts_15340159_15340160.csv"),
-            Path::new("_datas/_test_output_dir/receipts/receipts_15340159_15340160.csv"),
+            Path::new("_test_output_dir/receipts/receipts_15340159_15340160.csv"),
         );
 
         goldenfile::differs::text_diff(
             Path::new("tests/it/testdata/logs/logs_15340159_15340160.csv"),
-            Path::new("_datas/_test_output_dir/logs/logs_15340159_15340160.csv"),
+            Path::new("_test_output_dir/logs/logs_15340159_15340160.csv"),
         );
 
         goldenfile::differs::text_diff(
             Path::new("tests/it/testdata/token_transfers/token_transfers_15340159_15340160.csv"),
             Path::new(
-                "_datas/_test_output_dir/token_transfers/token_transfers_15340159_15340160.csv",
+                "_test_output_dir/token_transfers/token_transfers_15340159_15340160.csv",
             ),
         );
 
         goldenfile::differs::text_diff(
             Path::new("tests/it/testdata/ens/ens_15340159_15340160.csv"),
-            Path::new("_datas/_test_output_dir/ens/ens_15340159_15340160.csv"),
+            Path::new("_test_output_dir/ens/ens_15340159_15340160.csv"),
         );
     }
     Ok(())
